@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Fetching weather of your city...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  
+  .alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    display: none;
+    z-index: 1000;
+  }
+  
+  body.weather-clear {
+    background-image: url('https://source.unsplash.com/1600x900/?clear,sunny');
+  }
+  
+  body.weather-clouds {
+    background-image: url('https://source.unsplash.com/1600x900/?clouds');
+  }
+  
+  body.weather-rain {
+    background-image: url('https://source.unsplash.com/1600x900/?rain');
+  }
+  
+  body.weather-snow {
+    background-image: url('https://source.unsplash.com/1600x900/?snow');
+  }
+  
+  body.weather-thunderstorm {
+    background-image: url('https://source.unsplash.com/1600x900/?thunderstorm');
+  }
+  
+  body.weather-mist {
+    background-image: url('https://source.unsplash.com/1600x900/?mist');
+  }
+  
